@@ -1,0 +1,20 @@
+
+const int button = 2;
+int buttonVal = 0;
+
+// the setup routine runs once when you press reset:
+void setup() {
+  
+  pinMode(button, INPUT);
+
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+
+buttonVal = digitalRead(2);
+
+Serial.println(buttonVal);
+delay(100);
+}
